@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Kailash's Wall</title>
-
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kailash's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <h1>Kailash Yadav</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<!-- Site Header -->
-	<header>
-		<!-- h1: The most important headline (only one allowed per page by W3C standards) -->
-		<h1>Get To Know Kailash</h1>
-	</header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+	  <script src="scripts/about.js"></script>
+    </section>
 
-	<div class="container">
-		<!-- Section 1: Biography -->
-		<section id="main-bio">
-			<!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
-			<h2>KAILASH Yadav</h2>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Insert a short description of your project here.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Insert a short description of your project here.</p>
+        <a href="#">View Project</a>
+      </div>
+    </section>
 
-			<!-- Headshot image -->
-			<img id="bio-image" src="profileIcon_snoo58fbc505-c569-44c3-97f4-8558288cf265-headshot.png" alt="Kailash headshot"></img>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-			<!-- Paragraph with embedded link -->
-			<h3>Storage Software Developer</h3>
-			<p>
-				
-			</p>
-		</section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-		<!-- Section 2: Contact Information -->
-		<section id="contact-info">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-			<h2>Contact Information</h2>
-			
-			<ul>
-				<li><strong><a href="mailto:kailashyadav1377@gmail.com">EMAIL</a></strong></li>
-				<li><strong><a href="https://github.com/kaiyad">GITHUB</a></strong></li>
-				<li><strong><a href="https://www.linkedin.com/in/kaiyad/">LINKEDIN</a></strong></li>
-				<li><strong><a href="website.html">WEBSITE</a></strong></li>
-			</ul>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-		</section>
-	</div>
-
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
