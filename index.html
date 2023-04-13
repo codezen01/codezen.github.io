@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kailash's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaiyad.com</title>
+    <meta name="description" content="Kailash's Portfolio">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
-    <h1>Kailash Yadav</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-	  <script src="scripts/about.js"></script>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Insert a short description of your project here.</p>
-        <a href="#">View Project</a>
+      <div class="main">
+        <div class="main-container">
+            <div id="main-container-inner" class="main-container-inner">
+                <div>
+                </div>
+                <div class="inner-container">
+                    <header>
+                        <div class="logo" id="color-click">
+                            <a href="#"><img id="logo" alt="KY" src="svg/logo.png"></a>
+                        </div>
+                        <div class="icons">
+                            <a href="mailto:kailashyadav1377@gmail.com"><img id="email" src="svg/email.png" alt="kailashyadav1377gmail.com"></a>
+                            <a href="https://github.com/kaiyad"><img id="github" alt="https://github.com/kaiyad" src="svg/github.png"></a>
+                            <a href="https://www.linkedin.com/in/kaiyad/"><img id="linkedin" alt="kaiyad.linkedin.com" src="svg/linkedin.png"></a>
+                        </div>
+                    </header>
+                    <main class="projects-overview">
+                        <div class="main-message">
+                            <div class="welcome-message">
+                                <div id="welcome">
+                                    <h1>Welcome</h1>
+                                </div>
+                                <span>
+                                    <p>My name is Kailash Yadav, I'm a software designer and developer based in Bengaluru, India. I have written python based libraries and utilities for well known storage based products and platforms.</p>
+                                    <p>I'm passionate about designing and developing software solutions. </p>
+                                </span>
+                            </div>
+                            <div class="individual-project">
+                                <h2>Projects</h2>
+                                <h3>Cortx</h3>
+                                <h3>Flash Blade</h3>
+                            </div>
+                        <div class="spacer"></div>
+                    </main>
+                    <footer>
+                    </footer>
+                </div>
+            </div>
+        </div>
       </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Insert a short description of your project here.</p>
-        <a href="#">View Project</a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-  </footer>
 </body>
 </html>
