@@ -1,5 +1,5 @@
 head {
-    padding:40px;
+    padding:3.0vw;
 }
 
 img:hover {
@@ -13,13 +13,11 @@ body {
     user-select: none;
     color: #d1d1d1;
     background:#1d1d20;
-    border-top: 10px solid;
+    border-top: 1.0vw solid;
     border-style:outset;
-    border-left: 10px solid;
-    border-right: hidden;
-    border-bottom: hidden;
-    border-radius: 15px;
-    margin: 40px;
+    border-left: 1.0vw solid;
+    border-radius: 2vw;
+    margin: 3.0vw;
     height: 100%;
     font-family: sans-serif;
     font-weight: lighter;
@@ -48,19 +46,20 @@ body {
 }
 
 .main {
-    padding: 20px;
+    padding: 2.0vw;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 2.0vw;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 2.0vw;
     float:inline-start;
     animation: changeText 5s infinite;
+    width: 82%;
 }
 
 .logo:hover {
@@ -89,18 +88,19 @@ header {
 }
 
 .icons {
-    margin-left: 70%;
-    float: right
+    display: flex;
+    flex-direction:row;
+    width: fit-content;
+    height: fit-content;
 }
-
 #linkedin, #email, #github {
-    width: 40px;
-    height: 40px;
-    padding-left: 40px;
+    width: 3.0vw;
+    height: 3.0vw;
+    padding-left: 2.0vw;
 }
 
 main {
-    padding:30px;
+    padding:2.0vw;
 }
 
 .main-message {
@@ -114,7 +114,7 @@ main {
 }
 
 #welcome {
-    font-size: 150px;
+    font-size: 11.0vw;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(30, end);
@@ -131,12 +131,12 @@ main {
 
 .details {
     max-width: fit-content;
-    border-left: 2px solid;
-    border-right: 2px solid;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size:18px;
+    border-left: 0.2vw solid;
+    border-right: 0.2vw solid;
+    border-radius: 1.5vw;
+    padding-left: 2.0vw;
+    padding-right: 2.0vw;
+    font-size:1.2vw;
     animation: changeBorder 5s infinite
 }
 
@@ -144,9 +144,9 @@ main {
     width: fit-content;
     height: fit-content;
     float:inline-start;
-    font-size: 25px;
-    padding-left: 30px;
-    padding-top: 30px;
+    font-size: 2.0vw;
+    padding-left: 4.0vw;
+    padding-top: 2.0vw;
     text-align: center;
 }
 
@@ -154,34 +154,36 @@ main {
     display: flex;
     text-align: start;
     flex-direction: column;
-    font-size: 20px;
-    border-left:2px solid;
-    border-top: 2px solid;
-    border-radius: 15px;
-    padding-left: 10px;
+    font-size: 1.2vw;
+    border-left:0.1vw solid;
+    border-top: 0.1vw solid;
+    border-radius: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     border-color: rgb(57, 150, 232);
 }
 
 #project1, #project2, #project3 {
     text-decoration: none;
     color: white;
-    border-bottom: 1px solid;
+    border-bottom: 0.1vw solid;
     border-color: rgb(57, 150, 232);
 }
 
 .cortx {
     display: none;
+    font-size: 1.2vw;
     max-width: 50%;
     float: inline-start;
     border-left-style:double;
     border-right-style: double;
-    border-radius: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-radius: 1.5vw;
+    padding-left: 1.0vw;
+    padding-right: 1.0vw;
     height: fit-content;
-    margin-top: 100px;
+    width:fit-content;
+    margin-top: 8vw;
     animation: changeBorder 5s infinite;
-    
 }
 
 .skills {
@@ -189,41 +191,43 @@ main {
     flex-direction:column;
     width: fit-content;
     height: fit-content;
-    border: 2px solid;
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 18px;
+    border: 0.1vw solid;
+    border-radius: 1.5vw;
+    margin-top: 2.0vw;
+    padding: 1.0vw;
+    font-size: 1.2vw;
     border-color: rgb(57, 150, 232);
 }
 
 .skill {
     float:left;
-    padding-bottom: 5px;
+    padding-bottom: 0.5vw;
 }
 
 .rating {
-    padding-left: 30px;
+    padding-left: 3.0vw;
     float:right;
     animation: changeText 5s infinite;
 }
 
 .skills-logo{
-    width:20px;
-    height:20px;
+    width:2.0vw;
+    height:2.0vw;
 }
 
 .more {
+    font-size: 1.2vw;
     cursor: pointer;
 }
 
 .more-details {
     display: none;
+    font-size:1.2vw;
     border-left-style:double;
     border-right-style: double;
-    border-radius: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-radius: 1.2vw;
+    padding-left: 2.0vw;
+    padding-right: 2.0vw;
     width: fit-content;
     height: fit-content;
     animation: changeBorder 5s infinite;
