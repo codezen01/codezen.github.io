@@ -181,9 +181,23 @@ main {
 .rating {
     padding-left: 30px;
     float:right;
+    animation: changeText 5s infinite;
 }
 
-.python-logo{
+.skills-logo{
     width:20px;
     height:20px;
 }
+
+.more {
+    cursor: pointer;
+}
+
+.more-details {
+    display: none;
+    border-left-style:double;
+    border-radius: 15px;
+    padding-left: 20px;
+    animation: changeBorder 5s infinite;
+}
+
