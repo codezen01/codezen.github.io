@@ -1,16 +1,4 @@
 
-p {
-    font-size: 18px;
-    color:white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    text-shadow: rgb(183, 51, 231);
-}
-
 img:hover {
     transform: scale(1.1);
 }
@@ -29,6 +17,8 @@ body {
     border-bottom: hidden;
     border-radius: 15px;
     height: 100%;
+    font-family: sans-serif;
+    font-weight: lighter;
     animation: changeBorder 5s infinite;
 }
 
@@ -66,7 +56,6 @@ header {
 .logo {
     font-size: 30px;
     float:inline-start;
-    font-family: Helvetica, sans-serif;
     animation: changeText 5s infinite;
 }
 
@@ -92,8 +81,7 @@ header {
         text-shadow: 2px 2px 4px rgb(15, 237, 104);
       }
     80% {
-        color: rgb(242, 31, 35);
-        text-shadow: 2px 2px 4px rgb(243, 219, 5);
+        border-color: rgb(67, 63, 74);
     }
     100% {
         color: rgb(243, 219, 5);
@@ -122,9 +110,7 @@ main {
 }
 
 #welcome {
-    font-size: 100px;
-    font-family: sans-serif;
-    font-weight: lighter;
+    font-size: 150px;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(30, end);
@@ -141,27 +127,63 @@ main {
 
 .details {
     border-left: 2px solid;
-    border-left-style: inset;
-    padding-left: 30px;
+    border-right: 2px solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size:18px;
     animation: changeBorder 5s infinite
 }
 
 .projects {
-    max-width: 40%;
-    padding-left: 100px;
-    padding-top:30px;
     float:inline-start;
-    font-size: 35px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .project {
     display: flex;
+    text-align: start;
     flex-direction: column;
+    font-size: 20px;
     border-left:2px solid;
     border-top: 2px solid;
-    border-radius: 5px;
-    border-right: hidden;
-    border-bottom: hidden;
+    border-radius: 15px;
     padding-left: 10px;
     animation: changeBorder 5s infinite;
+}
+
+#project {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid;
+    animation: changeBorder 5s infinite;
+}
+
+.skills {
+    display: flex;
+    flex-direction:column;
+    width: fit-content;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+    animation: changeBorder 5s infinite;
+}
+
+.skill {
+    float:left;
+    padding-bottom: 5px;
+}
+
+.rating {
+    padding-left: 30px;
+    float:right;
+}
+
+.python-logo{
+    width:20px;
+    height:20px;
 }
