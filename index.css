@@ -1,12 +1,15 @@
+head {
+    padding:40px;
+}
 
 img:hover {
     transform: scale(1.1);
 }
 
 body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
     user-select: none;
     color: #d1d1d1;
     background:#1d1d20;
@@ -16,6 +19,7 @@ body {
     border-right: hidden;
     border-bottom: hidden;
     border-radius: 15px;
+    margin: 40px;
     height: 100%;
     font-family: sans-serif;
     font-weight: lighter;
@@ -66,26 +70,21 @@ header {
 @keyframes changeText {
     0% {
         color:rgb(183, 51, 231);
-        text-shadow: 2px 2px 4px rgb(57, 150, 232);
     }
     20% {
         color: rgb(57, 150, 232);
-        text-shadow: 2px 2px 4px rgb(183, 51, 231);
     }
     40% {
         color: rgb(15, 237, 104);
-        text-shadow: 2px 2px 4px rrgb(57, 115, 121);
       }
     60% {
         color: rgb(57, 115, 121);
-        text-shadow: 2px 2px 4px rgb(15, 237, 104);
       }
     80% {
-        border-color: rgb(67, 63, 74);
+        color: rgb(67, 63, 74);
     }
     100% {
         color: rgb(243, 219, 5);
-        text-shadow: 2px 2px 4px rgb(242, 31, 35);
     }
 }
 
@@ -102,6 +101,11 @@ header {
 
 main {
     padding:30px;
+}
+
+.main-message {
+    display: flex;
+    flex-direction: row;
 }
 
 .welcome-message {
@@ -126,15 +130,19 @@ main {
 }
 
 .details {
+    max-width: fit-content;
     border-left: 2px solid;
     border-right: 2px solid;
     border-radius: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     font-size:18px;
     animation: changeBorder 5s infinite
 }
 
 .projects {
+    width: fit-content;
+    height: fit-content;
     float:inline-start;
     font-size: 25px;
     padding-left: 30px;
@@ -151,26 +159,42 @@ main {
     border-top: 2px solid;
     border-radius: 15px;
     padding-left: 10px;
-    animation: changeBorder 5s infinite;
+    border-color: rgb(57, 150, 232);
 }
 
-#project {
+#project1, #project2, #project3 {
     text-decoration: none;
     color: white;
     border-bottom: 1px solid;
+    border-color: rgb(57, 150, 232);
+}
+
+.cortx {
+    display: none;
+    max-width: 50%;
+    float: inline-start;
+    border-left-style:double;
+    border-right-style: double;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: fit-content;
+    margin-top: 100px;
     animation: changeBorder 5s infinite;
+    
 }
 
 .skills {
     display: flex;
     flex-direction:column;
     width: fit-content;
+    height: fit-content;
     border: 2px solid;
     border-radius: 10px;
     margin-top: 30px;
     padding: 10px;
     font-size: 18px;
-    animation: changeBorder 5s infinite;
+    border-color: rgb(57, 150, 232);
 }
 
 .skill {
@@ -196,8 +220,13 @@ main {
 .more-details {
     display: none;
     border-left-style:double;
+    border-right-style: double;
     border-radius: 15px;
     padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    height: fit-content;
     animation: changeBorder 5s infinite;
 }
+
 
