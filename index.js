@@ -3,30 +3,87 @@ const moreDetails = document.querySelector('.more-details');
 const cortx = document.querySelector('#project1');
 const cortxDetails = document.querySelector('.cortx');
 const welcomeMessage = document.querySelector('.welcome-message');
+const flashBlade = document.querySelector('#project2');
+const flashbladeDetails = document.querySelector('.flash-blade');
+const echo = document.querySelector('#project3');
+const echoDetails = document.querySelector('.echo');
+var moreToggle = true;
+var cortxToggle = true;
+var echoToggle = true;
+var flashbladeToggle = true;
 
-var toggle=true;
+// Hide elements
+function hideElements(elementIds) {
+  for (var i = 0; i < elementIds.length; i++) {
+    var element = elementIds[i];
+    element.style.display = "none";
+  }
+}
+
+// Event listeners for project details
+
 more.addEventListener('click', function() {
-    if (toggle == true) {
+    if (moreToggle) {
         moreDetails.style.display = 'block';
-        toggle = false;
+        moreToggle = false;
     }
 
-    else if (toggle == false) {
+    else if (!moreToggle) {
         moreDetails.style.display = 'none';
-        toggle = true;
+        moreToggle = true;
     }
 });
 
 cortx.addEventListener('click', function() {
-    if (toggle == true) {
+    if (cortxToggle) {
+        hideElements([flashbladeDetails, echoDetails, welcomeMessage]);
+        flashbladeToggle = true;
+        echoToggle =  true;
         cortxDetails.style.display = 'block';
-        welcomeMessage.style.display = 'none';
-        toggle = false;
+        cortxToggle = false;
     }
 
-    else if (toggle == false) {
-        cortxDetails.style.display = 'none';
+    else if (!cortxToggle) {
+        hideElements([flashbladeDetails, echoDetails, cortxDetails]);
+        flashbladeToggle = true; 
+        echoToggle =  true;      
         welcomeMessage.style.display = 'block';
-        toggle = true;
+        cortxToggle = true;
+    }
+});
+
+flashBlade.addEventListener('click', function() {
+    if (flashbladeToggle) {
+        hideElements([cortxDetails, echoDetails, welcomeMessage]);
+        cortxToggle = true;
+        echoToggle = true;
+        flashbladeDetails.style.display = 'block';
+        flashbladeToggle = false;
+    }
+
+    else if (!flashbladeToggle) {
+        hideElements([flashbladeDetails, echoDetails, cortxDetails]);
+        cortxToggle = true; 
+        echoToggle = true;
+        welcomeMessage.style.display = 'block';
+        flashbladeToggle = true;
+    }
+});
+
+echo.addEventListener('click', function() {
+    if (echoToggle) {
+        hideElements([flashbladeDetails, cortxDetails, welcomeMessage]);
+        flashbladeToggle = true;
+        cortxToggle = true;
+        echoDetails.style.display = 'block';
+        echoToggle = false;
+    }
+
+    else if (!echoToggle) {
+        hideElements([flashbladeDetails, echoDetails, cortxDetails]);
+        flashbladeToggle = true; 
+        cortxToggle = true;
+        welcomeMessage.style.display = 'block';
+        echoToggle = true;
     }
 });

@@ -130,20 +130,20 @@ main {
 }
 
 .details {
-    max-width: fit-content;
     border-left: 0.2vw solid;
     border-right: 0.2vw solid;
     border-radius: 1.5vw;
     padding-left: 2.0vw;
     padding-right: 2.0vw;
     font-size:1.2vw;
+    width: fit-content;
     animation: changeBorder 5s infinite
 }
 
 .projects {
-    width: fit-content;
+    max-width: 15%;
     height: fit-content;
-    float:inline-start;
+    float:start;
     font-size: 2.0vw;
     padding-left: 4.0vw;
     padding-top: 2.0vw;
@@ -172,8 +172,8 @@ main {
 
 .cortx {
     display: none;
+    max-width: 60%;
     font-size: 1.2vw;
-    max-width: 50%;
     float: inline-start;
     border-left-style:double;
     border-right-style: double;
@@ -181,7 +181,36 @@ main {
     padding-left: 1.0vw;
     padding-right: 1.0vw;
     height: fit-content;
-    width:fit-content;
+    margin-top: 8vw;
+    animation: changeBorder 5s infinite;
+}
+
+.flash-blade {
+    display: none;
+    max-width: 60%;
+    font-size: 1.2vw;
+    float: inline-start;
+    border-left-style:double;
+    border-right-style: double;
+    border-radius: 1.5vw;
+    padding-left: 1.0vw;
+    padding-right: 1.0vw;
+    height: fit-content;
+    margin-top: 8vw;
+    animation: changeBorder 5s infinite;
+}
+
+.echo {
+    display: none;
+    max-width: 60%;
+    font-size: 1.2vw;
+    float: inline-start;
+    border-left-style:double;
+    border-right-style: double;
+    border-radius: 1.5vw;
+    padding-left: 1.0vw;
+    padding-right: 1.0vw;
+    height: fit-content;
     margin-top: 8vw;
     animation: changeBorder 5s infinite;
 }
@@ -189,7 +218,7 @@ main {
 .skills {
     display: flex;
     flex-direction:column;
-    width: fit-content;
+    max-width: 35%;
     height: fit-content;
     border: 0.1vw solid;
     border-radius: 1.5vw;
