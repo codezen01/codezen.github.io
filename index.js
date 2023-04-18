@@ -7,10 +7,15 @@ const flashBlade = document.querySelector('#project2');
 const flashbladeDetails = document.querySelector('.flash-blade');
 const echo = document.querySelector('#project3');
 const echoDetails = document.querySelector('.echo');
+const myLogo = document.querySelector('.logo');
 var moreToggle = true;
 var cortxToggle = true;
 var echoToggle = true;
 var flashbladeToggle = true;
+
+myLogo.addEventListener('click', function() {
+  window.location.href = 'index.html';
+});
 
 // Hide elements
 function hideElements(elementIds) {

@@ -17,32 +17,11 @@ body {
     border-style:outset;
     border-left: 1.0vw solid;
     border-radius: 2vw;
+    border-color: rgb(57, 150, 232);
     margin: 3.0vw;
     height: 100%;
     font-family: sans-serif;
-    font-weight: lighter;
-    animation: changeBorder 5s infinite;
-}
-
-@keyframes changeBorder {
-    0% {
-      border-color:rgb(183, 51, 231);
-    }
-    20% {
-      border-color: rgb(57, 150, 232);
-    }
-    40% {
-      border-color: rgb(36, 178, 93);
-    }
-    60% {
-        border-color: rgb(57, 115, 121);
-      }
-    80% {
-        border-color: rgb(67, 63, 74);
-    }
-    100% {
-        border-color: rgb(198, 186, 85);
-    }
+    font-weight: lighter;    
 }
 
 .main {
@@ -53,46 +32,27 @@ header {
     display: flex;
     flex-direction: row;
     padding: 2.0vw;
+    max-width: 100%;
 }
 
 .logo {
-    font-size: 2.0vw;
-    float:inline-start;
-    animation: changeText 5s infinite;
-    width: 80%;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-@keyframes changeText {
-    0% {
-        color:rgb(183, 51, 231);
-    }
-    20% {
-        color: rgb(57, 150, 232);
-    }
-    40% {
-        color: rgb(15, 237, 104);
-      }
-    60% {
-        color: rgb(57, 115, 121);
-      }
-    80% {
-        color: rgb(67, 63, 74);
-    }
-    100% {
-        color: rgb(243, 219, 5);
-    }
+    display: flex;
+    flex-direction: row;
+    width: 80%;    
+    height: fit-contnet;
+    font-size: 3vw;
+    color: rgb(57, 150, 232);
+    cursor: pointer;
 }
 
 .icons {
+    max-width: 20%;
     display: flex;
     flex-direction:row;
     width: fit-content;
     height: fit-content;
 }
+
 #linkedin, #email, #github {
     width: 3.0vw;
     height: 3.0vw;
@@ -109,12 +69,15 @@ main {
 }
 
 .welcome-message {
-    max-width: 60%;
+    width: 60%;
     float: inline-start;
+    padding-left: 1.0vw;
+    padding-right: 1.4vw;
 }
 
 #welcome {
-    font-size: 11.0vw;
+    width: fit-content;
+    font-size: 10.3vw;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(30, end);
@@ -130,21 +93,22 @@ main {
 }
 
 .details {
-    border-left: 0.2vw solid;
-    border-right: 0.2vw solid;
+    border-left-style: double;
+    border-right-style: double;
     border-radius: 1.5vw;
-    padding-left: 2.0vw;
-    padding-right: 2.0vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     font-size:1.2vw;
-    width: fit-content;
-    animation: changeBorder 5s infinite
+    border-color: rgb(57, 150, 232);
+    width: 100;
 }
 
 .projects {
-    max-width: 15%;
+    width: 10%;
+    margin-top: 8vw;
     height: fit-content;
-    float:start;
-    font-size: 2.0vw;
+    float: inline-end;
+    font-size: 1.2vw;
     padding-left: 4.0vw;
     padding-top: 2.0vw;
     text-align: center;
@@ -172,57 +136,58 @@ main {
 
 .cortx {
     display: none;
-    max-width: 60%;
+    width: 60%;
     font-size: 1.2vw;
     float: inline-start;
     border-left-style:double;
     border-right-style: double;
     border-radius: 1.5vw;
+    border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
-    height: fit-content;
+    height: fit-content;    
     margin-top: 8vw;
-    animation: changeBorder 5s infinite;
 }
 
 .flash-blade {
     display: none;
-    max-width: 60%;
+    width: 60%;
     font-size: 1.2vw;
     float: inline-start;
     border-left-style:double;
     border-right-style: double;
     border-radius: 1.5vw;
+    border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
     height: fit-content;
     margin-top: 8vw;
-    animation: changeBorder 5s infinite;
 }
 
 .echo {
     display: none;
-    max-width: 60%;
+    width: 60%;
     font-size: 1.2vw;
     float: inline-start;
     border-left-style:double;
     border-right-style: double;
     border-radius: 1.5vw;
+    border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
     height: fit-content;
     margin-top: 8vw;
-    animation: changeBorder 5s infinite;
 }
 
 .skills {
     display: flex;
     flex-direction:column;
-    max-width: 35%;
+    float: inline-end;
+    width: 30%;
     height: fit-content;
     border: 0.1vw solid;
     border-radius: 1.5vw;
-    margin-top: 2.0vw;
+    margin-top: 8vw;
     padding: 1.0vw;
     font-size: 1.2vw;
     border-color: rgb(57, 150, 232);
@@ -236,7 +201,7 @@ main {
 .rating {
     padding-left: 3.0vw;
     float:right;
-    animation: changeText 5s infinite;
+    color: rgb(198, 186, 85);
 }
 
 .skills-logo{
@@ -254,12 +219,12 @@ main {
     font-size:1.2vw;
     border-left-style:double;
     border-right-style: double;
-    border-radius: 1.2vw;
-    padding-left: 2.0vw;
-    padding-right: 2.0vw;
-    width: fit-content;
+    border-radius: 1.5vw;
+    border-color: rgb(57, 150, 232);
+    padding-left: 1vw;
+    padding-right: 1vw;
     height: fit-content;
-    animation: changeBorder 5s infinite;
+    width: fit-content;
 }
 
 
