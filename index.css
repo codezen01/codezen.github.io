@@ -53,7 +53,7 @@ header {
     height: fit-content;
 }
 
-#linkedin, #email, #github {
+#linkedin, #email, #github, #resume {
     width: 3.0vw;
     height: 3.0vw;
     padding-left: 2.0vw;
