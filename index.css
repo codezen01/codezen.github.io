@@ -38,7 +38,7 @@ header {
 .logo {
     display: flex;
     flex-direction: row;
-    width: 80%;    
+    width: 70%;    
     height: fit-contnet;
     font-size: 3vw;
     color: rgb(57, 150, 232);
@@ -46,9 +46,8 @@ header {
 }
 
 .icons {
-    max-width: 20%;
-    display: flex;
-    flex-direction:row;
+    flex-direction: row;
+    float: right;
     width: fit-content;
     height: fit-content;
 }
@@ -68,15 +67,11 @@ main {
     flex-direction: row;
 }
 
-.welcome-message {
-    float: inline-start;
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
-
 #welcome {
-    width: fit-content;
-    font-size: 9vw;
+    padding: 2.0vw;
+    width:fit-content;
+    float: center;
+    font-size: 6vw;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(30, end);
@@ -103,7 +98,7 @@ main {
      padding-left: 1.0vw;
      padding-right: 1.0vw;
      height: fit-content;
-     margin-top: 8vw; 
+     margin-top: 1vw; 
 }
 
 .qual {
@@ -144,7 +139,7 @@ main {
     padding-left: 1vw;
     padding-right: 1vw;
     border-color: rgb(57, 150, 232);
-    margin-top: 8vw;
+    margin-top: 1vw;
 }
 
 #project1, #project2, #project3 {
@@ -166,7 +161,7 @@ main {
     padding-left: 1.0vw;
     padding-right: 1.0vw;
     height: fit-content;    
-    margin-top: 8vw;
+    margin-top: 1vw;
 }
 
 .flash-blade {
@@ -181,7 +176,7 @@ main {
     padding-left: 1.0vw;
     padding-right: 1.0vw;
     height: fit-content;
-    margin-top: 8vw;
+    margin-top: 1vw;
 }
 
 .echo {
@@ -196,7 +191,7 @@ main {
     padding-left: 1.0vw;
     padding-right: 1.0vw;
     height: fit-content;
-    margin-top: 8vw;
+    margin-top: 1vw;
 }
 
 .skills {
@@ -207,7 +202,7 @@ main {
     height: fit-content;
     border: 0.1vw solid;
     border-radius: 1.5vw;
-    margin-top: 8vw;
+    margin-top: 1vw;
     font-size: 1.2vw;
     border-color: rgb(57, 150, 232);
 }
