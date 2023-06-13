@@ -1,5 +1,3 @@
-const qual = document.querySelector('.qual');
-const qualDetails = document.querySelector('.qualifications');
 const cortx = document.querySelector('#project1');
 const cortxDetails = document.querySelector('.cortx');
 const about = document.querySelector('.about');
@@ -8,7 +6,6 @@ const flashbladeDetails = document.querySelector('.flash-blade');
 const echo = document.querySelector('#project3');
 const echoDetails = document.querySelector('.echo');
 const myLogo = document.querySelector('.logo');
-var qualToggle = true;
 var cortxToggle = true;
 var echoToggle = true;
 var flashbladeToggle = true;
@@ -24,20 +21,6 @@ function hideElements(elementIds) {
     element.style.display = "none";
   }
 }
-
-// Event listeners for project details
-
-qual.addEventListener('click', function() {
-    if (qualToggle) {
-        qualDetails.style.display = 'block';
-        qualToggle = false;
-    }
-
-    else if (!qualToggle) {
-        qualDetails.style.display = 'none';
-        qualToggle = true;
-    }
-});
 
 cortx.addEventListener('click', function() {
     if (cortxToggle) {

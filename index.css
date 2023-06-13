@@ -91,9 +91,7 @@ main {
      width: 60%;
      font-size: 1.2vw;
      float: inline-start;
-     border-left-style:double;
-     border-right-style: double;
-     border-radius: 1.5vw;
+     border-left-style: double;
      border-color: rgb(57, 150, 232);
      padding-left: 1.0vw;
      padding-right: 1.0vw;
@@ -105,8 +103,6 @@ main {
     border-radius: 1.5vw;
     border-color: rgb(57, 150, 232);
     border-left-style: double;
-    border-right-style: double;
-    padding-left: 1.0vw;
     padding-right: 1.0vw;
     width: fit-content;
 }
@@ -117,8 +113,6 @@ main {
     width: fit-content;
     font-size: 1.2vw;
     border-left-style: double;
-    border-right-style: double;
-    border-radius: 1.5vw;
     border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
@@ -134,8 +128,6 @@ main {
     flex-direction: column;
     font-size: 1.2vw;
     border-left:0.1vw solid;
-    border-top: 0.1vw solid;
-    border-radius: 1.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
     border-color: rgb(57, 150, 232);
@@ -155,8 +147,6 @@ main {
     font-size: 1.2vw;
     float: inline-start;
     border-left-style:double;
-    border-right-style: double;
-    border-radius: 1.5vw;
     border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
@@ -170,8 +160,6 @@ main {
     font-size: 1.2vw;
     float: inline-start;
     border-left-style:double;
-    border-right-style: double;
-    border-radius: 1.5vw;
     border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
@@ -185,8 +173,6 @@ main {
     font-size: 1.2vw;
     float: inline-start;
     border-left-style:double;
-    border-right-style: double;
-    border-radius: 1.5vw;
     border-color: rgb(57, 150, 232);
     padding-left: 1.0vw;
     padding-right: 1.0vw;
